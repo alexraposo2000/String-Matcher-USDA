@@ -17,7 +17,7 @@ NOTE: multiple terms in the starting list can be mapped to a single term in the 
 
 **fuzzy_match.py** - </br>
 **tf_idf_match.py** - </br>
-**BERT_match.py** - this function is partially coppied from [this article](https://towardsdatascience.com/bert-for-measuring-text-similarity-eec91c6bf9e1) </br>
+**BERT_match.py** - this implementation is partially coppied from [this article](https://towardsdatascience.com/bert-for-measuring-text-similarity-eec91c6bf9e1) </br>
 
 
 ## Running the mapper on your own data
