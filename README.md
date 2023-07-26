@@ -1,6 +1,7 @@
 # Concensus voting string matching using fuzzy string matching, tf-idf, and BERT
 This project was developed in collaboration with the Lemay lab, part of the USDA immunity and disease prevention unit, for mapping betten related databases using string matching. All scripts are written in Python and were run using Python version 3.10.
-This method and handle maps between lists of strings and lists containing lists of strings.
+This method and handle maps between lists of strings and lists containing lists of strings.</br>
+
 <ins>**Mapping between lists of strings:**</ins> after isolating a starting list and a target list from two datasets, modify mapper.py in the designated area at the bottom of the file to access these lists.</br>
 Example input: list1 = ['banana','apple','butter','corn bread'], list2 = ['apple sauce','banana bread,'cheddar cheese','corn tortilla']</br>
 
