@@ -1,4 +1,4 @@
-# Concensus voting string matching using fuzzy string matching, tf-idf, and BERT
+# String matching using fuzzy string matching, tf-idf, and BERT with concensus voting
 This project was developed in collaboration with the Lemay lab, part of the USDA immunity and disease prevention unit, for mapping betten related databases using string matching. All scripts are written in Python and were run using Python version 3.10.
 This method and handle maps between lists of strings and lists containing lists of strings.</br>
 
