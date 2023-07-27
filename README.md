@@ -24,4 +24,4 @@ NOTE: multiple terms in the starting list can be mapped to a single term in the 
 These instructions are written for Mac terminals. After opening your terminal, change your working directory to the folder contianing mapper.py, clean.py, fuzzy_match.py, tf_idf_match.py, BERT_match.py, and a folder or file contianing your data. After making changes to mapper.py so that your data is accessed, run ```python mapper.py```. The results of the mapping will be displayed in your terminal and saved as a csv in your working directory.
 
 
-Demo data provided
+Demo data provided ([source](https://www.kaggle.com/datasets/trolukovich/nutritional-values-for-common-foods-and-products?resource=download))
