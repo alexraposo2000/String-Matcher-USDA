@@ -1,12 +1,15 @@
+def StopWords():
+    stopwords = ['','and', 'to', 'not', 'no',  'bkdfrd', 'ppd', 'pkgddeli', 'pkgd', 'xtra', 'oz', 'in', 'with', 'or', 'only', 'cooking', 'as', 'food', 'distribution', 'form', 'w', 'wo', 'ns', 'nfs', 'incl']
+    return stopwords
+
 def cleaner(lst, type, join_punct = ', '):
     if type == 'strings':
         join_punct = " "
     import re
     import string
     import nltk
-    nltk.download('wordnet')
+    # nltk.download('wordnet')
     wn = nltk.WordNetLemmatizer()
-    # print('cleaner called on: ',lst)
     '''lst is a list containing the objects you want cleaned (object type must be specified)
     type = 'lists', = 'strings', or = 'string' indicates whether you're cleaning
     a list of lists that contain strings, a list of strings, or a single string.
@@ -16,8 +19,8 @@ def cleaner(lst, type, join_punct = ', '):
     # first, determine what type of
     # Out punctuation and stopwords to remove
     punct = string.punctuation[0:11] + string.punctuation[13:] # remove '-' from the list of punctuation. This is needed for the text cleaner in the following cell
-    stopwords = ['','and', 'to', 'not', 'no',  'bkdfrd', 'ppd', 'pkgddeli', 'pkgd', 'xtra', 'oz', 'in', 'with', 'or', 'only', 'cooking', 'as', 'food', 'distribution', 'form', 'w', 'wo', 'ns', 'nfs', 'incl']
 
+    stopwords = StopWords()
     def clean_string(text, jp = join_punct):
         text = "".join([word for word in text if word not in punct])
         tokens = re.split('[-\W+]', text)

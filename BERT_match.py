@@ -77,8 +77,17 @@ def bert_match(list1, list2, type, join_punct = ', '):
     df_scores['2'] = [d[1] for d in df_scores_data]
     df_scores['3'] = [d[2] for d in df_scores_data]
     return df_matches, df_scores
-
-
-list_of_strings1 = ['turkey, cheese, cheddar', 'watermelon, lemon']
-list_of_strings2 = ['turkey, cheese, cheddar', 'ham, lemon, mayo']
-print(bert_match(list_of_strings1,list_of_strings2,type = 'strings'))
+#
+#
+# queries = pd.read_csv('./demo_data/data.csv')
+# queries = list(queries.iloc[:,0])
+# # print(ls1[0:5])
+# strings = pd.read_csv('./demo_data/data2_subset.csv')
+# strings = list(strings.iloc[:,0])
+#
+# d1, d2 = bert_match(queries, strings, type = 'strings')
+# # print(d1[['list1','1']])
+# # #
+# # list_of_strings1 = ['turkey, cheese, cheddar', 'watermelon, lemon']
+# # list_of_strings2 = ['turkey, cheese, cheddar', 'ham, lemon, mayo']
+# # print(bert_match(list_of_strings1,list_of_strings2,type = 'strings'))
